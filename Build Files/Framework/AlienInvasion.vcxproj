@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{70A9F4AC-3E12-453C-9B30-CB083472A41D}</ProjectGuid>
+    <RootNamespace>AlienInvasion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <OutDir>$(SolutionDir)\..\Gold Build - 14883251\Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\Gold Build - 14883251\Bin\</OutDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\API-SDL\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include\;$(SolutionDir)API-SDL\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\include\;$(SolutionDir)API-SDL\SDL2_image-devel-2.0.3-VC\SDL2_image-2.0.3\include\;$(SolutionDir)API-FMOD\fmodstudioapi11007win-installer\api\lowlevel\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)\API-SDL\SDL2_image-devel-2.0.3-VC\SDL2_image-2.0.3\lib\x86\;$(SolutionDir)\API-SDL\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\lib\x86\;$(SolutionDir)\API-SDL\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86\;$(SolutionDir)\API-FMOD\fmodstudioapi11007win-installer\api\lowlevel\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\API-SDL\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include\;$(SolutionDir)\API-SDL\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\include\;$(SolutionDir)\API-SDL\SDL2_image-devel-2.0.3-VC\SDL2_image-2.0.3\include\;$(SolutionDir)\API-FMOD\fmodstudioapi11007win-installer\api\lowlevel\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\API-SDL\SDL2_image-devel-2.0.3-VC\SDL2_image-2.0.3\lib\x86\;$(SolutionDir)\API-SDL\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\lib\x86\;$(SolutionDir)\API-SDL\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86\;$(SolutionDir)\API-FMOD\fmodstudioapi11007win-installer\api\lowlevel\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="BackBuffer.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="BallTrail.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="DebuggingPanel.h" />
+    <ClInclude Include="Dizzy.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="ExplosionParticle.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GreenBoss.h" />
+    <ClInclude Include="GUIComponent.h" />
+    <ClInclude Include="GUIManager.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="IceField.h" />
+    <ClInclude Include="IcePowerUp.h" />
+    <ClInclude Include="IniParser.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="InstructionPanel.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelChooserPanel.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="LogManager.h" />
+    <ClInclude Include="LosePanel.h" />
+    <ClInclude Include="MainMenuPanel.h" />
+    <ClInclude Include="Paddle.h" />
+    <ClInclude Include="Panel.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleEmitter.h" />
+    <ClInclude Include="PausePanel.h" />
+    <ClInclude Include="PinkBoss.h" />
+    <ClInclude Include="PowerUp.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="SplashScreenPanel.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteSheet.h" />
+    <ClInclude Include="StartParticle.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="WinPanel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimatedSprite.cpp" />
+    <ClCompile Include="BackBuffer.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="BallTrail.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="DebuggingPanel.cpp" />
+    <ClCompile Include="Dizzy.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="ExplosionParticle.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GreenBoss.cpp" />
+    <ClCompile Include="GUIComponent.cpp" />
+    <ClCompile Include="GUIManager.cpp" />
+    <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="IceField.cpp" />
+    <ClCompile Include="IcePowerUp.cpp" />
+    <ClCompile Include="IniParser.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="InstructionPanel.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LevelChooserPanel.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="LosePanel.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainMenuPanel.cpp" />
+    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="PausePanel.cpp" />
+    <ClCompile Include="PinkBoss.cpp" />
+    <ClCompile Include="PowerUp.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="SplashScreenPanel.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteSheet.cpp" />
+    <ClCompile Include="StarParticle.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="WinPanel.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
